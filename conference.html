@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        Conference Site
+    </title>
+</head>
+<body style="background-color: blanchedalmond;">
+    <div class="head">
+        <center>
+            <h1>CONFERENCES</h1>
+        </center>
+    </div>
+    <main>
+        <section class="slideshow">
+            <img src="images/c1.jpg" alt="Image 1">
+            <img src="images/c2.jpg" alt="Image 2">
+            <img src="images/c3.webp" alt="Image 3">
+            <img src="images/c4.jpg" alt="Image 4">
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <div class="cabout">
+        <center><h1>About Conferences</h1><br>
+            <div id="scroll">
+        <p>The technical workshop is a space where students can learn the more technical aspects of their medium. It is a space to experiment and reflect on issues raised by their medium. As a result, the space occupies a central position within the isdaT. It is not dedicated to a particular option, but is open to students from all years and options.</p></div>
+        </center>
+    </div>
+    <br>
+    <br>
+    <div class="cdetails">
+        <td>Conference 1</td>
+        <hr>
+        <td>Conference 2</td>
+        <hr>
+        <td>Conference 3</td>
+        <hr>
+        <td>Conference 4</td>
+        <hr>
+        <td>Conference 5</td>
+        <hr>
+        <td>Conference 6</td>
+        <hr>
+        <td>Conference 7</td>
+        <hr>
+        <td>Conference 8</td>
+        <hr>
+    </div>
+    <br>
+    <br>
+    <div>
+        <center>
+        <a href="registeration.html"><img src="images/submit.png" width="200px"></a>
+        </center>
+    </div>
+    <br>
+    <br>
+    <footer class="foot">
+       <center><p><a href="mailto:abc123abc@gmail.com">abc123abc@gmail.com</a></p></center>
+    </footer>
+</body>
+
+<style>
+
+.head{
+    padding: 10px;
+    flex: auto;
+    inline-display:flex;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    box-shadow: 10px 10px black;
+    margin: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.slideshow {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: 40px auto;
+}
+
+.slideshow img {
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slideshow img:first-child {
+    opacity: 1;
+}
+
+/* Add CSS animation for slideshow */
+.slideshow img {
+    animation: slideshow 12s infinite;
+}
+
+@keyframes slideshow {
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.slideshow img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.slideshow img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.slideshow img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.cabout{
+    border: 3px black;
+    border-radius: 7px;
+    overflow:hidden;
+    background-color: azure;
+}
+
+#scroll{
+    text-align: left;
+    -moz-transform: translate(-100%);
+    -webkit-transform: translate(-100%);
+    transform:translateX(-100%);
+
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation:my-animation 15s linear infinite;
+}
+
+@keyframes my-animation{
+    from{
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform:translateX(-100%);
+    
+    }
+    to{
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform:translateX(100%);
+    }
+}
+
+.foot{
+    text-align: center;
+    padding:3px;
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+
+.cdetails{
+    background-color: blanchedalmond;
+    height: auto;
+    border: 200px slategray;
+    padding: inline block;
+    padding-right:10px;
+    box-shadow:15px 15px slategrey;
+}   
+
+</style>
+</html>

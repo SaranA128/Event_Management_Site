@@ -1,0 +1,126 @@
+<body style="background-color:bisque;">
+<div class="ctitle">
+   <center><h1>WORKSHOPS</h1></center> 
+</div>
+
+
+<main>
+    <section class="slideshow">
+        <img src="images/w1.jpeg" alt="Image 1">
+        <img src="images/w2.jpeg" alt="Image 2">
+        <img src="images/w3.jpeg" alt="Image 3">
+        <img src="images/w4.jpeg" alt="Image 4">
+    </section>
+</main>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div class="wabout">
+        <center><h1>About Workshop</h1></center>
+        <p>The technical workshop is a space where students can learn the more technical aspects of their medium. It is a space to experiment and reflect on issues raised by their medium. As a result, the space occupies a central position within the isdaT. It is not dedicated to a particular option, but is open to students from all years and options.</p>
+    </div>
+<br>
+<br>
+    <div class="wdetails">
+        <td>Workshop1</td>
+        <hr>
+        <td>Workshop 2</td>
+        <hr>
+        <td>Workshop 3</td>
+        <hr>
+        <td>Workshop 4</td>
+        <hr>
+        <td>Workshop 5</td>
+        <hr>
+        <td>Workshop 6</td>
+        <hr>
+        <td>Workshop 7</td>
+        <hr>
+        <td>Workshop 8</td>
+        <hr>
+    </div>
+    <div>
+        <center>
+        <a href="registeration.html"><img src="images/submit.png" width="200px"></a>
+        </center>
+    </div>
+
+</body>
+<style>
+.ctitle{
+    padding: 5%;
+    background-color:grey;
+    font-size: 30px;
+    font-family: serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.slideshow {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: 40px auto;
+}
+
+.slideshow img {
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slideshow img:first-child {
+    opacity: 1;
+}
+
+/* Add CSS animation for slideshow */
+.slideshow img {
+    animation: slideshow 12s infinite;
+}
+
+@keyframes slideshow {
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.slideshow img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.slideshow img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.slideshow img:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.wabout{
+    text-align: center;
+    background-color: grey;
+    padding: 10px;
+}
+
+</style>
+</html>

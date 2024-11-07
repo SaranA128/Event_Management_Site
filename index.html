@@ -1,0 +1,140 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>Event Management Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color: black;">
+        <div class="head">
+            
+            <img class="img" src="images/logo.gif" width="5cm">
+            
+            <center><h1 id="h11">Event Management Website</h1></center>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="about">
+            <center><h1>About Us</h1>
+            <div id="scroll">
+                <p>
+                At this website, we revolutionize the way you plan and manage events. Our platform is designed to simplify every aspect of event management, ensuring a seamless experience from start to finish.
+            </p>
+        </div>
+            </center>
+        </div>
+
+        <main>
+            <section class="slideshow">
+                <img src="images/w1.jpeg" alt="Image 1">
+                <img src="images/c1.jpg" alt="Image 2">
+                <img src="images/c3.webp" alt="Image 3">
+                <img src="images/w4.jpeg" alt="Image 4">
+            </section>
+        </main>
+        <br>
+        <br><br>
+        <br>
+        <div>
+            <center>
+            <a href="hackathon.html"><img src="images/hackathon.jpg" width="200px" height="100px" style="padding-right: 100px;"></a>
+            <a href="hackathon.html"><img src="images/idesthon.png" width="200px" height="100px" style="padding-right: 100px;"></a>
+            <a href="workshop.html"><img src="images/workshop.png" width="200px" height="100px"style="padding-right: 100px;"></a>
+            <a href="conference.html"><img src="images/conference.png" width="200px" height="100px"style="padding-right: 100px;"></a
+            </center>
+        </div>
+        <br>
+        <br>
+        <div>
+            <center>
+            <a href="registeration.html"><img src="images/submit.png" width="200px"></a>
+            </center>
+        </div>
+    <br>
+    <br>
+        <footer class="foot">
+            <center><p><a href="mailto:abc123abc@gmail.com">abc123abc@gmail.com</a></p></center>
+         </footer>
+    </body>
+
+<style>
+
+.about{
+    background-color: grey;
+}
+#scroll{
+    text-align: right;
+    -moz-transform: translate(+100%);
+    -webkit-transform: translate(+100%);
+    transform:translateY(+100%);
+
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation:my-animation 15s linear infinite;
+}
+
+@keyframes my-animation{
+    from{
+        -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform:translateX(-100%);
+    
+    }
+    to{
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform:translateX(100%);
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.slideshow {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: 40px auto;
+}
+
+.slideshow img {
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slideshow img:first-child {
+    opacity: 1;
+}
+
+/* Add CSS animation for slideshow */
+.slideshow img {
+    animation: slideshow 12s infinite;
+}
+
+@keyframes slideshow {
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.foot{
+    text-align: center;
+    padding:3px;
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+</style>
+</html>
